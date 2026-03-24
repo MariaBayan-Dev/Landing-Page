@@ -108,3 +108,59 @@ nav a::after{
 nav a:hover::after{
     width: 100%;
 }
+
+
+/*---HERO SECTION---*/
+
+#hero{
+    min-height: 80vh;
+}
+
+.section-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#hero .section-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-container{
+    flex: 1;
+}
+
+.image-hero{
+    flex: 1;
+}
+
+.hero-container h1{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.3;
+    color: var(--color-header);
+}
+
+.hero-container p{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--color-button);
+}
+
+button{
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background-color: var(--color-button);
+    border-radius: 15px;
+    color: var(--text-color-secondary);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--color-header);
+}
