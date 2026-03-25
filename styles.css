@@ -47,12 +47,6 @@ h1, h2, h3{
     text-align: center;
     font-size: 2rem;
     color: var(--text-color-primary);
-}
-
-#products h2,
-#about h2,
-#values h2,
-#contact h2 {
     margin-bottom: 2rem;
 }
 
@@ -238,4 +232,33 @@ article span{
 
 .about-container p{
     flex: 1;
+}
+
+/*----TESTIMONIALS SECTION---*/
+
+.testimonies-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+#testimonies article{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.testimonies-container img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.testimonies-container p,
+.testimonies-container blockquote{
+    margin-bottom: 1rem;
 }
