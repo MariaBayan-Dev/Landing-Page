@@ -234,6 +234,7 @@ article span{
     flex: 1;
 }
 
+
 /*----TESTIMONIALS SECTION---*/
 
 .testimonies-container{
@@ -261,4 +262,32 @@ article span{
 .testimonies-container p,
 .testimonies-container blockquote{
     margin-bottom: 1rem;
+}
+
+
+/*----SECTION VALUES----*/
+
+.values-container{
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.values{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-accent);
+    padding: 2rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: var(--color-header);
+    box-shadow: var(--box-shadow);
+}
+
+.values svg{
+    width: 60px;
+    height: 70px;
 }
