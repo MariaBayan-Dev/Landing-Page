@@ -11,6 +11,7 @@
     --text-color-primary: #2b2b2b; /*Color texto primario*/
     --text-color-secondary: #ffe8d3; /*Color texto secundario*/
     --color-header: #9A3F3F; /*Color del header*/
+    --color-footer: #5f2828; /*Color footer*/
     --color-button: #C1856D; /*Color button*/
     --color-hover: #a06e5a; /*Hover*/
     --color-accent: #E6CFA9; /*Color destacar lo importante*/
@@ -336,4 +337,59 @@ form textarea:focus{
 form input::placeholder,
 form textarea::placeholder{
     font-family: var(--font-secondary);
+}
+
+/*----FOOTER----*/
+
+footer{
+    padding: 3rem 1rem;
+    background-color: var(--color-footer);
+}
+
+.container-footer{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-items: flex-start;
+    margin: 0 auto;
+    gap: 2rem;
+    color: var(--text-color-secondary);
+}
+
+.footer-brand{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo span{
+    padding: 1rem;
+}
+
+.footer-brand svg{
+    width: 50px;
+    height: 60px;
+}
+
+.footer-brand p{
+    margin-bottom: 1rem;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: var(--text-color-secondary);
+    transition: color 0.3s ease;
+}
+
+.social-links a svg{
+    width: 20px;
+    height: 30px;
+}
+
+.social-links a:hover{
+    color: var(--color-hover);
 }
