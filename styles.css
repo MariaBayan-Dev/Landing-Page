@@ -55,6 +55,8 @@ h1, h2, h3{
 /*----HEADER LANDING----*/
 
 header{
+    position: sticky;
+    top: 0;
     background-color: var(--color-header);
 }
 
@@ -314,7 +316,7 @@ form{
 
 form input{
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     outline: none;
     border-radius: 15px;
     border: 1px solid var(--color-accent);
@@ -393,3 +395,23 @@ footer{
 .social-links a:hover{
     color: var(--color-hover);
 }
+
+.footer-newsletter{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-form{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-form input{
+    flex: 1;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border-radius: 15px;
+    border: 1px solid var(--color-accent);
+}
+
