@@ -16,7 +16,7 @@ menuHamburguer.addEventListener('click', () =>{
 const arrowUp = document.querySelector('.footer-up')
 
 window.addEventListener('scroll', () => {
-    if(window.scrollY > window.innerHeight / 2){
+    if(window.scrollY > window.innerHeight * 0.5){
         arrowUp.classList.add('visible')
     }else{
         arrowUp.classList.remove('visible')

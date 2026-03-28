@@ -246,10 +246,15 @@ button:hover{
 
     .image-hero{
         max-width: 100%;
-        width: 100%;
+        width: 60%;
         order: -1;
     }
 
+    .hero-container,
+    .hero-container p{
+        text-align: center;
+        width: 60ch;
+    }
 }
 
 
@@ -311,6 +316,23 @@ article span{
     flex: 1;
 }
 
+/*---RESPONSIVE ABOUT---*/
+@media (max-width: 768px){
+    .about-container{
+        flex-direction: column;
+    }
+
+    .about-container img{
+        max-width: 100%;
+        width: 60%;
+    }
+
+    .about-container p{
+        text-align: center;
+        width: 50ch;
+    }
+}
+
 
 /*----TESTIMONIALS SECTION---*/
 
@@ -360,6 +382,22 @@ blockquote svg{
 blockquote span{
     display: flex;
     justify-content: center;
+}
+
+/*---RESPONSIVE TESTIMONIES---*/
+
+@media (max-width: 768px){
+    .testimonies-container article{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    blockquote{
+        text-align: center;
+    }
 }
 
 /*----SECTION VALUES----*/
@@ -562,4 +600,28 @@ footer{
     text-align: center;
     padding: 1rem;
     color: var(--color-button);
+}
+
+/*----RESPONSIVE FOOTER---*/
+
+@media (max-width: 768px){
+    .container-footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-logo,
+    .social-links,
+    .footer-form{
+        justify-content: center;
+    }
+
+    .footer-newsletter{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .footer-newsletter h2{
+        margin-bottom: 1rem;
+    }
 }
