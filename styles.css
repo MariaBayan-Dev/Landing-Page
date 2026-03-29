@@ -61,6 +61,27 @@ section{
     margin-bottom: 2rem;
 }
 
+/*Cambiar colo de la selección al los textos*/
+::selection{
+    background-color: var(--color-accent);
+    color: var(--text-color-secondary);
+}
+
+/*Cambiar color barra scroll*/
+
+::-webkit-scrollbar{
+    width: 8px; /*Ancho de la barra scroll*/
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--card-bg);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-hover);
+    border-radius: 10px;
+}
+
 
 /*----HEADER LANDING----*/
 
@@ -147,6 +168,19 @@ nav a:hover::after{
     width: 25px;
     height: 2px;
     background-color: var(--color-accent);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburguer.active span:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburguer.active span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburguer.active span:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 /*----RESPONSIVE HAMBURGUER---*/
@@ -157,12 +191,16 @@ nav a:hover::after{
     }
 
     nav{
-        display: none;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        position: absolute;
+        transition: max-height 0.3s ease;
     }
 
     nav.active{
-        display: block;
-        position: absolute;
+        max-height: 300px;
+        opacity: 1;
         background-color: var(--color-header);
         width: 100%;
         left: 0;
@@ -253,13 +291,17 @@ button:hover{
     .hero-container,
     .hero-container p{
         text-align: center;
-        width: 60ch;
     }
 }
 
 @media (max-width: 480px){
     .hero-container h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .hero-container p{
+        font-size: 1rem;
+
     }
 }
 
@@ -335,7 +377,13 @@ article span{
 
     .about-container p{
         text-align: center;
-        width: 50ch;
+    }
+}
+
+@media (max-width: 480px){
+    .about-container img{
+        max-width: 100%;
+        width: 80%;
     }
 }
 
@@ -629,5 +677,11 @@ footer{
 
     .footer-newsletter h2{
         margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px){
+    .up-container{
+        padding: 0.5rem;
     }
 }
