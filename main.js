@@ -4,6 +4,7 @@
 
 const menuHamburguer = document.querySelector('.hamburguer')
 const menuNav = document.querySelector('.menu-nav')
+const navLinks = document.querySelectorAll('.menu-nav a')
 
 
 //ESCUCHAR CLICK EN EL BOTON
@@ -11,6 +12,15 @@ const menuNav = document.querySelector('.menu-nav')
 menuHamburguer.addEventListener('click', () =>{
     menuNav.classList.toggle('active')
     menuHamburguer.classList.toggle('active')
+})
+
+//CERRAR MENU
+
+navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        menuNav.classList.remove('active')
+        menuHamburguer.classList.remove('active')
+    })
 })
 
 

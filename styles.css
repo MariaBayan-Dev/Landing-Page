@@ -612,6 +612,7 @@ footer{
 
 .btn-newsletter{
     margin-top: 0;
+    padding: 0.75rem 0.85rem;
 }
 
 .footer-up{
@@ -621,6 +622,10 @@ footer{
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
+}
+
+.footer-up a {
+    color: var(--color-accent);
 }
 
 .footer-up.visible{
@@ -637,10 +642,6 @@ footer{
     transition: background-color 0.3s ease;
 }
 
-.up-container a {
-    color: var(--color-accent);
-}
-
 .up-container:hover{
     background-color: var(--color-hover);
 }
@@ -655,6 +656,17 @@ footer{
     padding: 1rem;
     color: var(--color-button);
 }
+
+.copyrigth a{
+    text-decoration: none;
+    color: var(--color-button);
+    transition: color 0.3s ease;
+}
+
+.copyrigth a:hover{
+    color: var(--color-accent);
+}
+
 
 /*----RESPONSIVE FOOTER---*/
 
