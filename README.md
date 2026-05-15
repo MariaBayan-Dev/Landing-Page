@@ -31,3 +31,4 @@ A simple trivia game project with questions.
 
 ## 📸 Preview
 
+<img width="1917" height="911" alt="quizz-trivial-preview" src="https://github.com/user-attachments/assets/7a6a8764-3b8a-41ab-8453-4405f444ae72" />
