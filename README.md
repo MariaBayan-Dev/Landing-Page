@@ -27,7 +27,7 @@ A simple trivia game project with questions.
 
 ## 🔗 Live Demo
 
-👉 [Quiz Trivial](https://mariabayan-dev.github.io/Quiz-trivial/)
+👉 [Landing Page](https://mariabayan-dev.github.io/Landing-Page/)
 
 ## 📸 Preview
 
