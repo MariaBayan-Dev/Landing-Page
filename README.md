@@ -19,8 +19,9 @@ A simple trivia game project with questions.
 - Manipulating the DOM
 - Creating functions for various actions, such as selecting a question
 
-## 💡 Future improvements
--Recreate it in React
+🔮 Future Improvements
+
+- Recreate it in React
 - Responsive Design
 - Add different features
 - Add dark mode
