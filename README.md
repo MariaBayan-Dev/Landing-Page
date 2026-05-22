@@ -10,9 +10,12 @@ A bakery landing page with responsive design and interactive navigation.
 
 ## 🚀 Features
 
-- Minimalist design
-- A series of 10 questions leading up to the results screen
-- Questions that include both correct and incorrect options
+- Clean, minimalist interface design
+- Products displayed in cards
+- Contact form
+- User reviews
+- Responsive design
+- Hamburger menu
 
 ## 📚 What I learned
 
