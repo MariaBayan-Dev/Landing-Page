@@ -25,10 +25,13 @@ A bakery landing page with responsive design and interactive navigation.
 
 🔮 Future Improvements
 
-- Recreate it in React
-- Responsive Design
-- Add different features
-- Add dark mode
+- Connect the contact form to a backend service 
+  like Formspree to make it fully functional.
+- Add scroll-triggered animations using the 
+  Intersection Observer API to improve the 
+  visual experience.
+- Rebuild using React to practice component 
+  structure with a real-world UI layout.
 
 ## 🔗 Live Demo
 
@@ -36,4 +39,5 @@ A bakery landing page with responsive design and interactive navigation.
 
 ## 📸 Preview
 
-<img width="1917" height="911" alt="quizz-trivial-preview" src="https://github.com/user-attachments/assets/7a6a8764-3b8a-41ab-8453-4405f444ae72" />
+<img width="1917" height="911" alt="bakery" src="https://github.com/user-attachments/assets/077e120b-6429-4191-960a-98cf58bf3b5e" />
+
