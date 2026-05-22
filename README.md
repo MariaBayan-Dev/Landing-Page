@@ -1,6 +1,6 @@
 # 🖼️ Landing Page
 
-A simple trivia game project with questions.
+A bakery landing page with responsive design and interactive navigation.
 
 ## 🛠️ Technologies
 
@@ -16,8 +16,12 @@ A simple trivia game project with questions.
 
 ## 📚 What I learned
 
-- Manipulating the DOM
-- Creating functions for various actions, such as selecting a question
+- How to implement a hamburger menu using classList.toggle() 
+  to show and hide navigation on mobile.
+- How to automatically close the menu when a nav link 
+  is clicked, improving the user experience on mobile.
+- How to show and hide a scroll-to-top arrow based on 
+  the user's scroll position using window.scrollY.
 
 🔮 Future Improvements
 
